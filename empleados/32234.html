@@ -68,13 +68,13 @@
       <button type="submit">Guardar</button>
     </form>
     <br>
-    <button id="viewSheetButton" onclick="window.open('https://docs.google.com/spreadsheets/d/1v016cgtusauNtp-OsUsmsYr5xtaJTQscg38Skhdcjnk/edit', '_blank')">Ver Hoja</button>
+    <button id="viewSheetButton" onclick="window.open('https://docs.google.com/spreadsheets/d/1M3-4Ce9n1eFFXTta5ER3bwSq4ldX1nDI3PBU2l76QgM/edit', '_blank')">Ver Hoja</button>
   </div>
   <script>
     document.getElementById('serviceForm').addEventListener('submit', function(event) {
       event.preventDefault();
 
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbzhVa0SsCGQ-oWHh0X6nlXPtIT6BFTv2jhIkYUP65nKKia6FBU8ei9zbWTUwZTZdaxyyw/exec'; // Reemplaza con tu URL del web app
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyKwdy8VuN2gfg_enD0iG917I0tXVEiTiiqCa1JNqyacixjLDv6CU1dRCvmQxXVyI2f/exec'; // Reemplaza con tu URL del web app
       const form = document.forms['serviceForm'];
 
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
