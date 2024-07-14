@@ -74,7 +74,7 @@
     document.getElementById('serviceForm').addEventListener('submit', function(event) {
       event.preventDefault();
 
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwne7qvDK7vT0gLZiaIPb0ctRIALqe4OQd0FNF6RLP4bLloFU2q85PqSn_zc-2dz7Vz/exec'; // Reemplaza con tu URL del web app
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbx8TpeqZlPAcfVqVPXx03XXGeRngX_64wUuHoqgtwv25V1JX0Epx8eei_yBBsbuPUYM/exec'; // Reemplaza con tu URL del web app
       const form = document.forms['serviceForm'];
 
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
